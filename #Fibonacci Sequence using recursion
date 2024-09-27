@@ -1,0 +1,25 @@
+\\Write a program to print Fibonacci Sequence using recursion 
+
+def fibonacci(n):
+	if n <= 1:
+		return n
+	else:
+		return (fibonacci(n-1) +fibonacci(n-2))
+n = int(input("HOW MANY TERMS ?"))
+if n <= 0:
+	print("Please enter a Positive Number.")
+else:
+	print("Fibonacci Sequence:")
+	for i in range(n):
+		print(fibonacci(i))
+
+
+#Output :
+       HOW MANY TERMS ?5
+       Fibonacci Sequence:
+       0
+       1
+       1
+       2
+       3
+
