@@ -1,0 +1,17 @@
+/* Write a program to find the factorial of a given number using recursion */
+
+def recursion(n):
+	if n == 0:
+		return 1
+	else:
+		return n * recursion(n-1)
+num = int(input("ENTER A NUMBER:"))
+if num < 0:
+	print("SORRY,FACTORIAL DOESNOT EXIST FOR NEGATIVE NUMBERS")
+else:
+	print("THE FACTORIAL OF",num,"is",recursion(num))
+
+
+#OUTPUT :
+       ENTER A NUMBER:5
+       THE FACTORIAL OF 5 is 120
